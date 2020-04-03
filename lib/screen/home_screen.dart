@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternetflix/model/model_movie.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -6,8 +7,21 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<Movie> movies= [
+    Movie.fromMap(
+        {
+          'title' : '사랑의 불시착',
+          'keyword' : '사랑/로맨스/판타지',
+          'poster' : 'test_movie_1.png',
+          'like': false
+        }
+    )
+  ];
+
   @override
-  void initState() {}
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
