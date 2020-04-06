@@ -42,5 +42,6 @@ List<Widget> makeBoxImage(List<Movie> movies) {
       )
     );
   }
+
   return results;
 }
